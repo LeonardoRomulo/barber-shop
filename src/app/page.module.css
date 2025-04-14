@@ -4,39 +4,6 @@
   max-width: 1024px;
 }
 
-.topo {
-  width: 100%;
-  height: 10vh;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.topo .image {
-  width: 100px;
-  height: 100px;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.container button {
-  padding: 10px 20px;
-  border-radius: 25px;
-  border: 2px solid #B1987D;
-  font-size: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
 .secao_banner {
   width: 100%;
   height: 30vh;
@@ -86,16 +53,15 @@
 
 /* Estilo do modo escuro */
 
-
-.dark .topo {
+.dark  {
   background: #252323;
 }
 
-.dark .topo .image {
+.dark img {
   filter: invert(1) brightness(2);
-}
+} 
 
-.dark .container_texto {
+.dark  .container_texto {
   background: #252323;
   color: #fff;
 }
