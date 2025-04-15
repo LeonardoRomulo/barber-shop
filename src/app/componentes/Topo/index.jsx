@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsSun, BsMoon } from "react-icons/bs";
 import Logo from "../../../../public/barbearia.png";
 
-export default function Topo({alterarTema, darkTheme}) {
+export default function Topo(props) {
   return (
     <header className={estilos.topo}>
       <div className={`${estilos.container} ${estilos.limitar_secao}`}>
@@ -13,9 +13,9 @@ export default function Topo({alterarTema, darkTheme}) {
           alt="logo barbearia"
         ></Image>
         <button 
-        onClick={alterarTema}
+        onClick={props.alterarTema}
             >
-          {darkTheme ? <BsSun /> : <BsMoon />}
+          {props.darkTheme ? <BsSun /> : <BsMoon />}
         </button>
       </div>
     </header>
