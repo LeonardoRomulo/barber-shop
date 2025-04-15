@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className={darkTheme ? estilos.dark : estilos.light}>
       <main className={estilos.main}>
-        <Topo alterarTema={mudarTema} dark={darkTheme} />
+      <Topo alterarTema={mudarTema}  />
         <section className={estilos.secao_banner}></section>
 
         <section className={estilos.container_texto}>

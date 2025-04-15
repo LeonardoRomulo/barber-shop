@@ -13,7 +13,7 @@ export default function Topo({alterarTema, darkTheme}) {
           alt="logo barbearia"
         ></Image>
         <button 
-        onClick={() => alterarTema(darkTheme)}
+        onClick={alterarTema}
             >
           {darkTheme ? <BsSun /> : <BsMoon />}
         </button>
